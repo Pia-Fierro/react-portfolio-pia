@@ -1,5 +1,5 @@
 import { Layout, Space } from "antd";
-const { Header, Footer, Content } = Layout;
+const { Header} = Layout;
 const headerStyle = {
   textAlign: "center",
   color: "#fff",
