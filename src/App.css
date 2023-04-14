@@ -1,8 +1,7 @@
-/* .layout {
-    height: 100vh;
-} */
+
 .logo {
-  float: right;
+  float: left;
+  margin:30px 30px ;
 }
 .site-layout-content {
     min-height: 280px;

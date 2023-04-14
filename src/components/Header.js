@@ -1,37 +1,29 @@
-import { Layout, Menu } from "antd";
+import { Layout } from "antd";
+import NavHeader from "./Navigation";
 const logo = require("../images/pia-profile-pic.jpg");
 const { Header } = Layout;
 
 const topPage = {
   height: "auto",
 };
+const headerTitle = {
+  fontSize: "60px",
+  color: "White",
+  marginTop: "90px",
+  // textAlign: "center"
+};
 
-const items = [
-  { title: "About me" },
-  { title: "Portfolio" },
-  { title: "Contact" },
-  { title: "Resume" },
-];
+const items = ["About me", "Portfolio", "Contact", "Resume"];
 
 function TopPage() {
   return (
     <Layout className="layout">
       <Header style={topPage}>
         <div className="logo">
-          <img src={logo} width="200" height="200" />
+          <img src={logo} alt="Pia profile" width="200" height="200" />
         </div>
-        {/* <Menu
-          theme="dark"
-          mode="horizontal"
-          defaultSelectedKeys={["2"]}
-          items={new Array(4).fill(null).map((_, index) => {
-            const key = index + 1;
-            return {
-              key,
-              label: ` ${key}`,
-            };
-          })}
-        /> */}
+        <h1 style={headerTitle}>Pia Fierro Portfolio</h1>
+        <NavHeader />
       </Header>
     </Layout>
   );

@@ -1,4 +1,4 @@
-import { Layout, theme } from "antd";
+import { Layout, theme, Space } from "antd";
 const { Content } = Layout;
 
 const textAboutMe = {
@@ -13,7 +13,7 @@ function MiddlePage() {
     <Layout className="layout">
       <Content
         style={{
-          padding: "0 50px",
+          padding: "40px 40px",
         }}
       >
         <div
