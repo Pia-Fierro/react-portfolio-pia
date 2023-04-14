@@ -1,28 +1,34 @@
-import { Layout, Space } from "antd";
+import { Layout, theme } from "antd";
 const { Content } = Layout;
 
-const contentStyle = {
+const textAboutMe = {
   textAlign: "center",
-  minHeight: 120,
-  lineHeight: "120px",
-  color: "#fff",
-  backgroundColor: "#108ee9",
 };
 
-const Middle = () => (
-  <Space
-    direction="vertical"
-    style={{
-      width: "100%",
-    }}
-    size={[0, 48]}
-  >
-    <Layout>
-      <Content style={contentStyle}>
-        <h2>About Me</h2>
-        <p></p>blablabla
+function MiddlePage() {
+  const {
+    token: { colorBgContainer },
+  } = theme.useToken();
+  return (
+    <Layout className="layout">
+      <Content
+        style={{
+          padding: "0 50px",
+        }}
+      >
+        <div
+          className="site-layout-content"
+          style={{
+            background: colorBgContainer,
+          }}
+        >
+          <h1>ABOUT ME:</h1>
+          <p style={textAboutMe}>
+            12345dfghuidhfgidfhugdfhugzdsughdfhvg;zdfhg;dfhgdhuishdiusahdfiuahsfiuhfiuhgh
+          </p>
+        </div>
       </Content>
     </Layout>
-  </Space>
-);
-export default Middle;
+  );
+}
+export default MiddlePage;

@@ -1,16 +1,15 @@
-import React from "react";
-import Top from "./components/Header";
-import Bottom from "./components/Footer";
-import Middle from "./components/Content";
+import "./App.css";
+import TopPage from "./components/Header";
+import MiddlePage from "./components/Content";
+import BottomPage from "./components/Footer";
 
 const App = () => {
   return (
     <div>
-      <Top />
-      <Middle />
-      <Bottom />
+      <TopPage />
+      <MiddlePage />
+      <BottomPage />
     </div>
   );
 };
-
 export default App;

@@ -1,50 +1,48 @@
-import { Layout, Space } from "antd";
-const { Footer, Card, List } = Layout;
-const footerStyle = {
-  textAlign: "center",
-  color: "#fff",
-  backgroundColor: "#7dbcea",
-};
-const data = [
+import { Layout, List } from "antd";
+import { GithubOutlined } from "@ant-design/icons";
+const { Footer } = Layout;
+
+const footerlinks = [
   {
-    title: "Title 1",
+    title: "GitHub",
+    href: "https://github.com/Pia-Fierro",
+    icon: "GithubOutlined",
   },
   {
-    title: "Title 2",
+    title: "LinkedIn",
+    href: "https://www.linkedin.com/in/p%C3%ADa-fierro-32442348/",
   },
   {
-    title: "Title 3",
-  },
-  {
-    title: "Title 4",
+    title: "Stack Overflow",
+    href: "https://stackoverflow.com/users/21641013/pia-fierro",
   },
 ];
-function Bottom() {
+
+function BottomPage() {
   return (
-    <Space
-      direction="vertical"
-      style={{
-        width: "100%",
-      }}
-      size={[0, 48]}
-    >
-      <Layout>
-        <Footer style={footerStyle}>
-          <List
-            grid={{
-              gutter: 16,
-              column: 4,
-            }}
-            dataSource={data}
-            renderItem={(item) => (
-              <List.Item>
-                <Card title={item.title}>Card content</Card>
-              </List.Item>
-            )}
-          />
-        </Footer>
-      </Layout>
-    </Space>
+    <Layout className="layout">
+      <Footer
+        style={{
+          textAlign: "center",
+        }}
+      >
+        <List
+          itemLayout="horizontal"
+          dataSource={footerlinks}
+          renderItem={(item, index) => (
+            <List.Item>
+              <List.Item.Meta
+                title={
+                  <a href={item.href}>
+                    {item.title}
+                  </a>
+                }
+              />
+            </List.Item>
+          )}
+        />
+      </Footer>
+    </Layout>
   );
 }
-export default Bottom;
+export default BottomPage;
