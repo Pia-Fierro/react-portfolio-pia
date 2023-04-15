@@ -1,14 +1,14 @@
 import "./App.css";
-import TopPage from "./components/Header";
-import MiddlePage from "./components/Content";
-import BottomPage from "./components/Footer";
+import PageHeader from "./components/Header";
+import PageContent from "./components/Content";
+import PageFooter from "./components/Footer";
 
 const App = () => {
   return (
     <div>
-      <TopPage />
-      <MiddlePage />
-      <BottomPage />
+      <PageHeader />
+      <PageContent />
+      <PageFooter />
     </div>
   );
 };

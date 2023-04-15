@@ -15,7 +15,7 @@ const headerTitle = {
 
 const items = ["About me", "Portfolio", "Contact", "Resume"];
 
-function TopPage() {
+function PageHeader() {
   return (
     <Layout className="layout">
       <Header style={topPage}>
@@ -29,4 +29,4 @@ function TopPage() {
   );
 }
 
-export default TopPage;
+export default PageHeader;

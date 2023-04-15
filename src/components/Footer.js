@@ -1,8 +1,9 @@
-import { Layout, List, Space } from "antd";
+import { Layout, List, Avatar } from "antd";
 import {
   GithubOutlined,
   HomeOutlined,
   LoadingOutlined,
+  UserOutlined,
 } from "@ant-design/icons";
 
 const { Footer } = Layout;
@@ -25,7 +26,7 @@ const footerlinks = [
   },
 ];
 
-function BottomPage() {
+function PageFooter() {
   return (
     <Layout className="layout">
       <Footer
@@ -36,11 +37,20 @@ function BottomPage() {
         <List
           itemLayout="horizontal"
           dataSource={footerlinks}
-          renderItem={(item, index) => (
+          renderItem={(footerlinks, index) => (
             <List.Item>
               <List.Item.Meta
-                title={<a href={item.href}>{item.title}</a>}
-                icon={<item.icon />}
+                title={
+                  <a href={footerlinks.href}>
+                    {footerlinks.title}
+                    {<br />}
+                    {<GithubOutlined />}
+                    {/* footerlinkd.icon not working */}
+                    {<footerlinks.icon />}
+                  </a>
+                }
+                avatar={<Avatar icon={<GithubOutlined />} />}
+                // avatar={<Avatar icon={<footerlinks.icon />} />}
               />
             </List.Item>
           )}
@@ -49,4 +59,4 @@ function BottomPage() {
     </Layout>
   );
 }
-export default BottomPage;
+export default PageFooter;

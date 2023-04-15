@@ -1,11 +1,12 @@
-import { Layout, theme, Space } from "antd";
+import { Layout, theme } from "antd";
 const { Content } = Layout;
 
 const textAboutMe = {
   textAlign: "center",
+  display: "flex",
 };
 
-function MiddlePage() {
+function PageContent() {
   const {
     token: { colorBgContainer },
   } = theme.useToken();
@@ -23,12 +24,10 @@ function MiddlePage() {
           }}
         >
           <h1>ABOUT ME:</h1>
-          <p style={textAboutMe}>
-            12345dfghuidhfgidfhugdfhugzdsughdfhvg;zdfhg;dfhgdhuishdiusahdfiuahsfiuhfiuhgh
-          </p>
+          <p style={textAboutMe}>I am</p>
         </div>
       </Content>
     </Layout>
   );
 }
-export default MiddlePage;
+export default PageContent;
