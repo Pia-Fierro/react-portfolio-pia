@@ -6,7 +6,7 @@ const textAboutMe = {
   display: "flex",
 };
 
-function PageContent() {
+function About() {
   const {
     token: { colorBgContainer },
   } = theme.useToken();
@@ -30,4 +30,4 @@ function PageContent() {
     </Layout>
   );
 }
-export default PageContent;
+export default About;

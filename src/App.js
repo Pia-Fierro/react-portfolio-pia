@@ -1,14 +1,10 @@
-import "./App.css";
-import PageHeader from "./components/Header";
-import PageContent from "./components/Content";
-import PageFooter from "./components/Footer";
+import React from "react";
+import Container from "./components/Container";
 
 const App = () => {
   return (
     <div>
-      <PageHeader />
-      <PageContent />
-      <PageFooter />
+      <Container />
     </div>
   );
 };

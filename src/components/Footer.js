@@ -50,6 +50,7 @@ function PageFooter() {
                   </a>
                 }
                 avatar={<Avatar icon={<GithubOutlined />} />}
+                // footerlinks.icon not working
                 // avatar={<Avatar icon={<footerlinks.icon />} />}
               />
             </List.Item>

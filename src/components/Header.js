@@ -15,7 +15,7 @@ const headerTitle = {
 
 const items = ["About me", "Portfolio", "Contact", "Resume"];
 
-function PageHeader() {
+function PageHeader(props) {
   return (
     <Layout className="layout">
       <Header style={topPage}>
@@ -23,7 +23,10 @@ function PageHeader() {
           <img src={logo} alt="Pia profile" width="200" height="200" />
         </div>
         <h1 style={headerTitle}>Pia Fierro Portfolio</h1>
-        <NavHeader />
+        <NavHeader
+          currentPage={props.currentPage}
+          handlePageChange={props.handlePageChange}
+        />
       </Header>
     </Layout>
   );
