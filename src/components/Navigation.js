@@ -6,17 +6,11 @@ const myNavBar = {
   justifyContent: "space-evenly",
   backgroundColor: "#001529",
 };
-const anchor = {
-  color: "white",
-  fontSize: "20px",
-};
-
 function NavHeader({ currentPage, handlePageChange }) {
   return (
     <Layout className="layout">
       <nav style={myNavBar}>
         <a
-          style={anchor}
           href="#About"
           onClick={() => handlePageChange("About")}
           className={currentPage === "About" ? "nav-link active" : "nav-link"}
@@ -25,7 +19,6 @@ function NavHeader({ currentPage, handlePageChange }) {
         </a>
 
         <a
-          style={anchor}
           href="#Projects"
           onClick={() => handlePageChange("Projects")}
           className={
@@ -36,7 +29,6 @@ function NavHeader({ currentPage, handlePageChange }) {
         </a>
 
         <a
-          style={anchor}
           href="#Contact"
           onClick={() => handlePageChange("Contact")}
           className={currentPage === "Contact" ? "nav-link active" : "nav-link"}
@@ -45,7 +37,6 @@ function NavHeader({ currentPage, handlePageChange }) {
         </a>
 
         <a
-          style={anchor}
           href="#Resume"
           onClick={() => handlePageChange("Resume")}
           className={currentPage === "Resume" ? "nav-link active" : "nav-link"}

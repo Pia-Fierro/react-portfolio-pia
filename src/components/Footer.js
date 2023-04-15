@@ -6,11 +6,11 @@ import {
 } from "@ant-design/icons";
 
 const { Footer } = Layout;
-const myBreadCrumbStyle={
+const myBreadCrumbStyle = {
   display: "flex",
   justifyContent: "center",
-  alignItems: "center"
-}
+  alignItems: "center",
+};
 function PageFooter() {
   return (
     <Layout className="layout">
@@ -22,7 +22,7 @@ function PageFooter() {
               href: "https://github.com/Pia-Fierro",
               title: (
                 <>
-                  <GithubFilled style={{ fontSize: "30px" }} />
+                  <GithubFilled style={{ fontSize: "25px" }} />
                   <span>GitHub</span>
                 </>
               ),
@@ -31,7 +31,7 @@ function PageFooter() {
               href: "https://www.linkedin.com/in/p%C3%ADa-fierro-32442348/",
               title: (
                 <>
-                  <LinkedinFilled style={{ fontSize: "30px" }} />
+                  <LinkedinFilled style={{ fontSize: "25px" }} />
                   <span>LinkedIn</span>
                 </>
               ),
@@ -40,7 +40,7 @@ function PageFooter() {
               href: "https://twitter.com/PiaFierro3/",
               title: (
                 <>
-                  <TwitterCircleFilled style={{ fontSize: "30px" }} />
+                  <TwitterCircleFilled style={{ fontSize: "25px" }} />
                   <span>Twitter</span>
                 </>
               ),
