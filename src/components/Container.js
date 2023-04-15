@@ -4,14 +4,14 @@ import PageHeader from "./Header";
 import PageFooter from "./Footer.js";
 import About from "./NavPages/About.js";
 import Projects from "./NavPages/Projects";
-import Contact from "./NavPages/Contanct";
+import Contact from "./NavPages/Contact";
 import Resume from "./NavPages/Resume";
 
 function Container() {
   const [currentPage, setCurrentPage] = useState("About");
   const renderPage = () => {
     if (currentPage === "About") return <About />;
-    if (currentPage === "Portfolio") return <Projects />;
+    if (currentPage ==="Projects") return <Projects />;
     if (currentPage === "Contact") return <Contact />;
     return <Resume />;
   };

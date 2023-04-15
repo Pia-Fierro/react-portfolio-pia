@@ -13,8 +13,6 @@ const headerTitle = {
   // textAlign: "center"
 };
 
-const items = ["About me", "Portfolio", "Contact", "Resume"];
-
 function PageHeader(props) {
   return (
     <Layout className="layout">
