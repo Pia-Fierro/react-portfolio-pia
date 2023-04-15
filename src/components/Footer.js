@@ -1,60 +1,51 @@
-import { Layout, List, Avatar } from "antd";
+import { Layout, Breadcrumb } from "antd";
 import {
-  GithubOutlined,
-  HomeOutlined,
-  LoadingOutlined,
-  UserOutlined,
+  GithubFilled,
+  LinkedinFilled,
+  TwitterCircleFilled,
 } from "@ant-design/icons";
 
 const { Footer } = Layout;
-
-const footerlinks = [
-  {
-    title: "GitHub",
-    href: "https://github.com/Pia-Fierro",
-    icon: "GithubOutlined",
-  },
-  {
-    title: "LinkedIn",
-    href: "https://www.linkedin.com/in/p%C3%ADa-fierro-32442348/",
-    icon: "HomeOutlined",
-  },
-  {
-    title: "Stack Overflow",
-    href: "https://stackoverflow.com/users/21641013/pia-fierro",
-    icon: "LoadingOutlined",
-  },
-];
-
+const myBreadCrumbStyle={
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center"
+}
 function PageFooter() {
   return (
     <Layout className="layout">
-      <Footer
-        style={{
-          textAlign: "center",
-        }}
-      >
-        <List
-          itemLayout="horizontal"
-          dataSource={footerlinks}
-          renderItem={(footerlinks, index) => (
-            <List.Item>
-              <List.Item.Meta
-                title={
-                  <a href={footerlinks.href}>
-                    {footerlinks.title}
-                    {<br />}
-                    {<GithubOutlined />}
-                    {/* footerlinkd.icon not working */}
-                    {<footerlinks.icon />}
-                  </a>
-                }
-                avatar={<Avatar icon={<GithubOutlined />} />}
-                // footerlinks.icon not working
-                // avatar={<Avatar icon={<footerlinks.icon />} />}
-              />
-            </List.Item>
-          )}
+      <Footer>
+        <Breadcrumb
+          style={myBreadCrumbStyle}
+          items={[
+            {
+              href: "https://github.com/Pia-Fierro",
+              title: (
+                <>
+                  <GithubFilled style={{ fontSize: "30px" }} />
+                  <span>GitHub</span>
+                </>
+              ),
+            },
+            {
+              href: "https://www.linkedin.com/in/p%C3%ADa-fierro-32442348/",
+              title: (
+                <>
+                  <LinkedinFilled style={{ fontSize: "30px" }} />
+                  <span>LinkedIn</span>
+                </>
+              ),
+            },
+            {
+              href: "https://twitter.com/PiaFierro3/",
+              title: (
+                <>
+                  <TwitterCircleFilled style={{ fontSize: "30px" }} />
+                  <span>Twitter</span>
+                </>
+              ),
+            },
+          ]}
         />
       </Footer>
     </Layout>
