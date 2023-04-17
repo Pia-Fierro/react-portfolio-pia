@@ -1,5 +1,5 @@
 import React from "react";
-import Project from "./Project";
+import Projects from "./Project";
 
 import quizImg from "../../images/Coding-Quiz-Challenge.jpg";
 import destinationImg from "../../images/Destination-inspiration.jpg";
@@ -54,5 +54,5 @@ const projects = [
 ];
 
 export default function Portfolio() {
-  return <Project projects={projects} />;
+  return <Projects projects={projects} />;
 }
