@@ -22,13 +22,13 @@ function NavHeader({ currentPage, handlePageChange }) {
         </a>
 
         <a
-          href="#Projects"
-          onClick={() => handlePageChange("Projects")}
+          href="#Portfolio"
+          onClick={() => handlePageChange("Portfolio")}
           className={
-            currentPage === "Projects" ? "nav-link active" : "nav-link"
+            currentPage === "Portfolio" ? "nav-link active" : "nav-link"
           }
         >
-          Projects
+          Portfolio
         </a>
 
         <a

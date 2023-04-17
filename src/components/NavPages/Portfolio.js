@@ -1,5 +1,5 @@
 import React from "react";
-import Projects from "./Project";
+import Projects from "./Projects";
 
 import quizImg from "../../images/Coding-Quiz-Challenge.jpg";
 import destinationImg from "../../images/Destination-inspiration.jpg";
