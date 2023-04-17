@@ -20,7 +20,7 @@ export default function Projects(props) {
         <Card
           hoverable
           style={{
-            width: 600,
+            width: 500,
             backgroundColor: "#001529",
           }}
           cover={<img alt={project.alt} src={project.src} />}
