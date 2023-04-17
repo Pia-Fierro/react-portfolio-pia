@@ -3,24 +3,27 @@ import NavHeader from "./Navigation";
 const logo = require("../images/pia-profile-pic.jpg");
 const { Header } = Layout;
 
-const topPage = {
-  height: "auto",
-};
-const headerTitle = {
-  fontSize: "60px",
-  color: "White",
-  marginTop: "90px",
-  // textAlign: "center"
+const style = {
+  topPage: {
+    height: "auto",
+    padding: "20px 90px 0 90px",
+  },
+  headerTitle: {
+    fontSize: "80px",
+    color: "White",
+    marginTop: "150px",
+    paddingLeft: "400px",
+  },
 };
 
-function PageHeader(props) {
+export default function PageHeader(props) {
   return (
     <Layout className="layout">
-      <Header style={topPage}>
+      <Header style={style.topPage}>
         <div className="logo">
-          <img src={logo} alt="Pia profile" width="200" height="200" />
+          <img src={logo} alt="Pia profile" width="300" height="300" />
         </div>
-        <h1 style={headerTitle}>Pia Fierro Portfolio</h1>
+        <h1 style={style.headerTitle}>Pia Fierro Portfolio</h1>
         <NavHeader
           currentPage={props.currentPage}
           handlePageChange={props.handlePageChange}
@@ -29,5 +32,3 @@ function PageHeader(props) {
     </Layout>
   );
 }
-
-export default PageHeader;

@@ -1,7 +1,7 @@
 import { Layout, theme } from "antd";
 const { Content } = Layout;
 
-function About() {
+export default function About() {
   const {
     token: { colorBgContainer },
   } = theme.useToken();
@@ -51,4 +51,4 @@ function About() {
     </Layout>
   );
 }
-export default About;
+

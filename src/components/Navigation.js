@@ -1,15 +1,18 @@
 import React from "react";
 import { Layout } from "antd";
-const myNavBar = {
-  padding: "20px 0 20px 0",
-  display: "flex",
-  justifyContent: "space-evenly",
-  backgroundColor: "#001529",
+const style = {
+  myNavBar: {
+    alineItems: "right",
+    padding: "20px 0 0 0",
+    display: "flex",
+    justifyContent: "end",
+    backgroundColor: "#001529",
+  },
 };
 function NavHeader({ currentPage, handlePageChange }) {
   return (
     <Layout className="layout">
-      <nav style={myNavBar}>
+      <nav style={style.myNavBar}>
         <a
           href="#About"
           onClick={() => handlePageChange("About")}

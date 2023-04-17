@@ -11,7 +11,7 @@ const myBreadCrumbStyle = {
   justifyContent: "center",
   alignItems: "center",
 };
-function PageFooter() {
+export default function PageFooter() {
   return (
     <Layout className="layout">
       <Footer>
@@ -22,7 +22,7 @@ function PageFooter() {
               href: "https://github.com/Pia-Fierro",
               title: (
                 <>
-                  <GithubFilled style={{ fontSize: "25px" }} />
+                  <GithubFilled style={{ fontSize: "20px" }} />
                   <span>GitHub</span>
                 </>
               ),
@@ -31,7 +31,7 @@ function PageFooter() {
               href: "https://www.linkedin.com/in/p%C3%ADa-fierro-32442348/",
               title: (
                 <>
-                  <LinkedinFilled style={{ fontSize: "25px" }} />
+                  <LinkedinFilled style={{ fontSize: "20px" }} />
                   <span>LinkedIn</span>
                 </>
               ),
@@ -40,7 +40,7 @@ function PageFooter() {
               href: "https://twitter.com/PiaFierro3/",
               title: (
                 <>
-                  <TwitterCircleFilled style={{ fontSize: "25px" }} />
+                  <TwitterCircleFilled style={{ fontSize: "20px" }} />
                   <span>Twitter</span>
                 </>
               ),
@@ -51,4 +51,3 @@ function PageFooter() {
     </Layout>
   );
 }
-export default PageFooter;
