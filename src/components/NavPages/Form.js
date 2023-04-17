@@ -26,7 +26,8 @@ export default function ContactForm() {
   };
   return (
     <Layout>
-      <div style={{}}>
+      <div>
+        <h2>Contact Me:</h2>
         <Form
           {...layout}
           form={form}

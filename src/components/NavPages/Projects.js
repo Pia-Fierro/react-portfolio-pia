@@ -4,7 +4,6 @@ import { Card } from "antd";
 const style = {
   myClassProjects: {
     display: "flex",
-    justifyContent: "center",
     flexWrap: "wrap",
   },
   myLinks: {
@@ -22,17 +21,20 @@ export default function Projects(props) {
           style={{
             width: 500,
             backgroundColor: "#001529",
+            padding: "10px",
           }}
           cover={<img alt={project.alt} src={project.src} />}
         >
           <div>
-            <h2 style={{ color: "white", textAlign: "center" }}>
-              {project.name}
-            </h2>
+            <h3 style={{ color: "white" }}>{project.name}</h3>
             <div hoverable style={style.myLinks}>
-              <a href={project.gitUrl}>GitHub Repository</a>
+              <a style={{ fontSize: "15px" }} href={project.gitUrl}>
+                GitHub Repository
+              </a>
               <br />
-              <a href={project.deployApp}>Deploy application</a>
+              <a style={{ fontSize: "15px" }} href={project.deployApp}>
+                Deploy application
+              </a>
             </div>
           </div>
         </Card>

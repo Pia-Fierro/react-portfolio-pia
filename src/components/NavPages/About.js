@@ -7,6 +7,7 @@ export default function About() {
   } = theme.useToken();
   return (
     <Layout className="layout">
+      <h2>About me:</h2>
       <Content
         style={{
           padding: "40px 40px",
@@ -18,7 +19,6 @@ export default function About() {
             background: colorBgContainer,
           }}
         >
-          <h1>About me:</h1>
           <p style={{ display: "flex", fontSize: "18px" }}>
             I was born in Chile, but moved to Spain when I was a child. In Spain
             I obtiened a veterinarian degree, followed by a postdegree in exotic
@@ -51,4 +51,3 @@ export default function About() {
     </Layout>
   );
 }
-
