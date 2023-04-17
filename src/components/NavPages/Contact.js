@@ -1,7 +1,6 @@
 import React from "react";
+import ContanctForm from "./Form.js";
 
 export default function Contact() {
-  return <div>Contanct form in consturcion</div>;
+  return <ContanctForm />;
 }
-
-
