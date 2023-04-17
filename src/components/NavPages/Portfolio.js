@@ -2,12 +2,12 @@ import React from "react";
 import Projects from "./Projects";
 import { Layout } from "antd";
 
-import quizImg from "../../images/Coding-Quiz-Challenge.jpg";
-import destinationImg from "../../images/Destination-inspiration.jpg";
-import noteImg from "../../images/Note-Taker.jpg";
-import openImg from "../../images/Open-Chat-Box.jpg";
-import weatherImg from "../../images/Weather-Dashboard.jpg";
-import workImg from "../../images/Work-Day-Scheduler.jpg";
+import quizImg from "../../assets/images/Coding-Quiz-Challenge.jpg";
+import destinationImg from "../../assets/images/Destination-inspiration.jpg";
+import noteImg from "../../assets/images/Note-Taker.jpg";
+import openImg from "../../assets/images/Open-Chat-Box.jpg";
+import weatherImg from "../../assets/images/Weather-Dashboard.jpg";
+import workImg from "../../assets/images/Work-Day-Scheduler.jpg";
 
 // projects array data to populate my portfolio
 

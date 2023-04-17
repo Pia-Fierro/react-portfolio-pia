@@ -1,12 +1,12 @@
 import React from "react";
-import { Layout, Button, Form, Input, message, Space } from "antd";
+import { Layout, Button, Form, Input, message } from "antd";
 
 const layout = {
   labelCol: {
     span: 8,
   },
   wrapperCol: {
-    span: 16,
+    span: 10,
   },
 };
 
@@ -37,17 +37,11 @@ export default function ContactForm() {
       <div>
         <h2>Contact Me:</h2>
         <Form
+        style={{width:"100"}}
           {...layout}
           form={form}
           name="nest-messages"
           onFinish={onFinish}
-          style={{
-            marginLeft: 250,
-            maxWidth: 800,
-            paddingTop: 50,
-            display: "flex",
-            flexDirection: "column",
-          }}
           validateMessages={validateMessages}
         >
           <Form.Item
@@ -89,14 +83,13 @@ export default function ContactForm() {
           <Form.Item
             wrapperCol={{
               ...layout.wrapperCol,
-              offset: 8,
+              offset: 12,
             }}
           >
              {contextHolder}
             <Button
               type="primary"
               htmlType="submit"
-              style={{ marginLeft: 220 }}
               onClick={success}>
               Submit
             </Button>

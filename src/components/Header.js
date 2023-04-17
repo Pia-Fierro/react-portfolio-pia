@@ -1,6 +1,6 @@
 import { Layout } from "antd";
 import NavHeader from "./Navigation";
-const logo = require("../images/pia-profile-pic.jpg");
+const logo = require("../assets/images/pia-profile-pic.jpg");
 const { Header } = Layout;
 
 const style = {
