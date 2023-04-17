@@ -1,5 +1,5 @@
 import React from "react";
-import { Layout, Button, Form, Input, InputNumber } from "antd";
+import { Layout, Button, Form, Input } from "antd";
 
 const layout = {
   labelCol: {
@@ -15,20 +15,21 @@ const validateMessages = {
   types: {
     email: "${label} is not a valid email!",
   },
-  number: {
-    range: "${label} must be between ${min} and ${max}",
-  },
 };
 
-const onFinish = (values) => {
-  console.log(values);
-};
-export default function contactForm() {
+export default function ContactForm() {
+  const [form] = Form.useForm();
+  // console log the values entered by user and reset the values after sending data
+  const onFinish = (values) => {
+    console.log(values);
+    form.resetFields();
+  };
   return (
     <Layout>
       <div style={{}}>
         <Form
           {...layout}
+          form={form}
           name="nest-messages"
           onFinish={onFinish}
           style={{
@@ -66,7 +67,7 @@ export default function contactForm() {
             <Input />
           </Form.Item>
           <Form.Item
-            name={["user", "introduction"]}
+            name={["user", "message"]}
             label="Message"
             rules={[
               {
@@ -82,7 +83,11 @@ export default function contactForm() {
               offset: 8,
             }}
           >
-            <Button type="primary" htmlType="submit">
+            <Button
+              type="primary"
+              htmlType="submit"
+              style={{ marginLeft: 220 }}
+            >
               Submit
             </Button>
           </Form.Item>
