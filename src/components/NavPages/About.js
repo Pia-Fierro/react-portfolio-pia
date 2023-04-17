@@ -19,7 +19,7 @@ export default function About() {
             background: colorBgContainer,
           }}
         >
-          <p style={{ display: "flex", fontSize: "18px" }}>
+          <p style={{ display: "flex", fontSize: "18px", borderColor:"blue" }}>
             I was born in Chile, but moved to Spain when I was a child. In Spain
             I obtiened a veterinarian degree, followed by a postdegree in exotic
             animals medicine & surgery. After completing my formation I went

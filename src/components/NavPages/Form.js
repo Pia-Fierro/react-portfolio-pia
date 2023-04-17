@@ -1,5 +1,5 @@
 import React from "react";
-import { Layout, Button, Form, Input } from "antd";
+import { Layout, Button, Form, Input, message, Space } from "antd";
 
 const layout = {
   labelCol: {
@@ -24,6 +24,14 @@ export default function ContactForm() {
     console.log(values);
     form.resetFields();
   };
+  const [messageApi, contextHolder] = message.useMessage();
+  const success = () => {
+    messageApi.open({
+      type: "success",
+      content: "Contact form submitted",
+    });
+  };
+ 
   return (
     <Layout>
       <div>
@@ -84,11 +92,12 @@ export default function ContactForm() {
               offset: 8,
             }}
           >
+             {contextHolder}
             <Button
               type="primary"
               htmlType="submit"
               style={{ marginLeft: 220 }}
-            >
+              onClick={success}>
               Submit
             </Button>
           </Form.Item>
