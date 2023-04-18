@@ -5,6 +5,7 @@ const style = {
   myClassProjects: {
     display: "flex",
     flexWrap: "wrap",
+    justifyContent: "center",
   },
   myLinks: {
     display: "flex",

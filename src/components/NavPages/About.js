@@ -6,7 +6,7 @@ export default function About() {
     token: { colorBgContainer },
   } = theme.useToken();
   return (
-    <div>
+    <Layout>
       <h2>About me:</h2>
       <Content
         style={{
@@ -48,6 +48,6 @@ export default function About() {
           </p>
         </div>
       </Content>
-    </div>
+    </Layout>
   );
 }

@@ -5,8 +5,7 @@ import resume from "../../assets/resume/resume.pdf";
 const style = {
   myCardContainer: {
     display: "flex",
-    justifycontent: "center",
-    marginLeft: "350px",
+    justifyContent: "center",
   },
   myCardStyle: {
     width: 350,

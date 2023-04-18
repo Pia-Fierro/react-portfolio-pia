@@ -34,7 +34,7 @@ export default function ContactForm() {
   };
 
   return (
-    <Layout className="layout">
+    <Layout className="layout" style={{height:"100%"}}>
       <div>
         <h2>Contact Me:</h2>
         <Form
