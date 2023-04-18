@@ -14,12 +14,11 @@ const style = {
     fontSize: "20px",
   },
 };
-
 const { Title } = Typography;
 
 export default function Resume() {
   return (
-    <Layout>
+    <Layout className="layout">
       <div style={{ display: "flex", alignItems: "center" }}>
         <h2>Resume:</h2>
         <div

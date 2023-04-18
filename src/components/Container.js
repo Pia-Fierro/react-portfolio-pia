@@ -6,7 +6,9 @@ import About from "./NavPages/About.js";
 import Portfolio from "./NavPages/Portfolio.js";
 import Contact from "./NavPages/Contact";
 import Resume from "./NavPages/Resume";
+import Layout from "antd/es/layout/layout";
 
+// function to changed the section. Set About section as default.
 export default function Container() {
   const [currentPage, setCurrentPage] = useState("About");
   const renderPage = () => {
@@ -20,12 +22,15 @@ export default function Container() {
 
   return (
     <div>
-      <PageHeader
-        currentPage={currentPage}
-        handlePageChange={handlePageChange}
-      />
-      {renderPage()}
-      <PageFooter />
+      <Layout className="layout">
+        <PageHeader
+          currentPage={currentPage}
+          handlePageChange={handlePageChange}
+        />
+        {/* callin render page function to display each section when selected from nav bar */}
+        {renderPage()}
+        <PageFooter />
+      </Layout>
     </div>
   );
 }

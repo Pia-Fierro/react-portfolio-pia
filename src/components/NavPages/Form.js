@@ -24,6 +24,7 @@ export default function ContactForm() {
     console.log(values);
     form.resetFields();
   };
+  // diplay a success message after sending form
   const [messageApi, contextHolder] = message.useMessage();
   const success = () => {
     messageApi.open({
@@ -31,13 +32,13 @@ export default function ContactForm() {
       content: "Contact form submitted",
     });
   };
- 
+
   return (
-    <Layout>
+    <Layout className="layout">
       <div>
         <h2>Contact Me:</h2>
         <Form
-        style={{width:"100"}}
+          style={{ width: "100" }}
           {...layout}
           form={form}
           name="nest-messages"
@@ -86,11 +87,8 @@ export default function ContactForm() {
               offset: 12,
             }}
           >
-             {contextHolder}
-            <Button
-              type="primary"
-              htmlType="submit"
-              onClick={success}>
+            {contextHolder}
+            <Button type="primary" htmlType="submit" onClick={success}>
               Submit
             </Button>
           </Form.Item>

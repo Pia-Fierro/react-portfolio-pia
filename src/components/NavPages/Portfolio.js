@@ -1,7 +1,7 @@
 import React from "react";
 import Projects from "./Projects";
 import { Layout } from "antd";
-
+// importing images to populate the projects card
 import quizImg from "../../assets/images/Coding-Quiz-Challenge.jpg";
 import destinationImg from "../../assets/images/Destination-inspiration.jpg";
 import noteImg from "../../assets/images/Note-Taker.jpg";
@@ -10,7 +10,6 @@ import weatherImg from "../../assets/images/Weather-Dashboard.jpg";
 import workImg from "../../assets/images/Work-Day-Scheduler.jpg";
 
 // projects array data to populate my portfolio
-
 const projects = [
   {
     name: "Open Chat Box:",
@@ -61,7 +60,7 @@ const projects = [
 
 export default function Portfolio() {
   return (
-    <Layout>
+    <Layout className="layout">
       <div>
         <h2>Projects:</h2>
         <Projects projects={projects} />
