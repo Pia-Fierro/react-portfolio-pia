@@ -34,66 +34,63 @@ export default function ContactForm() {
   };
 
   return (
-    <Layout className="layout" style={{height:"100%"}}>
-      <div>
-        <h2>Contact Me:</h2>
-        <Form
-          style={{ width: "100" }}
-          {...layout}
-          form={form}
-          name="nest-messages"
-          onFinish={onFinish}
-          validateMessages={validateMessages}
+    <div>
+      <h2>Contact Me:</h2>
+      <Form
+        {...layout}
+        form={form}
+        name="nest-messages"
+        onFinish={onFinish}
+        validateMessages={validateMessages}
+      >
+        <Form.Item
+          name={["user", "name"]}
+          label="Name"
+          rules={[
+            {
+              required: true,
+            },
+          ]}
         >
-          <Form.Item
-            name={["user", "name"]}
-            label="Name"
-            rules={[
-              {
-                required: true,
-              },
-            ]}
-          >
-            <Input />
-          </Form.Item>
-          <Form.Item
-            name={["user", "email"]}
-            label="Email"
-            rules={[
-              {
-                type: "email",
-              },
-              {
-                required: true,
-              },
-            ]}
-          >
-            <Input />
-          </Form.Item>
-          <Form.Item
-            name={["user", "message"]}
-            label="Message"
-            rules={[
-              {
-                required: true,
-              },
-            ]}
-          >
-            <Input.TextArea />
-          </Form.Item>
-          <Form.Item
-            wrapperCol={{
-              ...layout.wrapperCol,
-              offset: 12,
-            }}
-          >
-            {contextHolder}
-            <Button type="primary" htmlType="submit" onClick={success}>
-              Submit
-            </Button>
-          </Form.Item>
-        </Form>
-      </div>
-    </Layout>
+          <Input />
+        </Form.Item>
+        <Form.Item
+          name={["user", "email"]}
+          label="Email"
+          rules={[
+            {
+              type: "email",
+            },
+            {
+              required: true,
+            },
+          ]}
+        >
+          <Input />
+        </Form.Item>
+        <Form.Item
+          name={["user", "message"]}
+          label="Message"
+          rules={[
+            {
+              required: true,
+            },
+          ]}
+        >
+          <Input.TextArea />
+        </Form.Item>
+        <Form.Item
+          wrapperCol={{
+            ...layout.wrapperCol,
+            offset: 12,
+          }}
+        >
+          {contextHolder}
+          <Button type="primary" htmlType="submit" onClick={success}>
+            Submit
+          </Button>
+        </Form.Item>
+      </Form>
+    </div>
   );
 }

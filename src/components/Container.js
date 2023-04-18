@@ -22,7 +22,7 @@ export default function Container() {
 
   return (
     <div>
-      <Layout className="layout">
+      <Layout style={{height:"100%"}}>
         <PageHeader
           currentPage={currentPage}
           handlePageChange={handlePageChange}
