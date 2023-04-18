@@ -60,11 +60,9 @@ const projects = [
 
 export default function Portfolio() {
   return (
-    <Layout className="layout">
-      <div>
-        <h2>Projects:</h2>
-        <Projects projects={projects} />
-      </div>
-    </Layout>
+    <div>
+      <h2>Projects:</h2>
+      <Projects projects={projects} />
+    </div>
   );
 }

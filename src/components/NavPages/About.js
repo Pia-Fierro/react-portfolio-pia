@@ -6,7 +6,7 @@ export default function About() {
     token: { colorBgContainer },
   } = theme.useToken();
   return (
-    <Layout className="layout">
+    <div>
       <h2>About me:</h2>
       <Content
         style={{
@@ -19,7 +19,7 @@ export default function About() {
             background: colorBgContainer,
           }}
         >
-          <p style={{ display: "flex", fontSize: "18px", borderColor:"blue" }}>
+          <p style={{ display: "flex", fontSize: "18px", borderColor: "blue" }}>
             I was born in Chile, but moved to Spain when I was a child. In Spain
             I obtiened a veterinarian degree, followed by a postdegree in exotic
             animals medicine & surgery. After completing my formation I went
@@ -48,6 +48,6 @@ export default function About() {
           </p>
         </div>
       </Content>
-    </Layout>
+    </div>
   );
 }

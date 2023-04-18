@@ -1,5 +1,5 @@
 import React from "react";
-import { Layout, Card, Space, Typography } from "antd";
+import { Card, Space, Typography } from "antd";
 import { DownloadOutlined } from "@ant-design/icons";
 import resume from "../../assets/resume/resume.pdf";
 const style = {
@@ -18,7 +18,7 @@ const { Title } = Typography;
 
 export default function Resume() {
   return (
-    <Layout className="layout">
+    <div>
       <div style={{ display: "flex", alignItems: "center" }}>
         <h2>Resume:</h2>
         <div
@@ -69,6 +69,6 @@ export default function Resume() {
           </Card>
         </Space>
       </div>
-    </Layout>
+    </div>
   );
 }

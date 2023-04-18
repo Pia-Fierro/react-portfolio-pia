@@ -18,17 +18,15 @@ const style = {
 
 export default function PageHeader(props) {
   return (
-    <Layout className="layout">
-      <Header style={style.topPage}>
-        <div className="logo">
-          <img src={logo} alt="Pia profile" width="300" height="300" />
-        </div>
-        <h1 style={style.headerTitle}>Pia Fierro Portfolio</h1>
-        <NavHeader
-          currentPage={props.currentPage}
-          handlePageChange={props.handlePageChange}
-        />
-      </Header>
-    </Layout>
+    <Header style={style.topPage}>
+      <div className="logo">
+        <img src={logo} alt="Pia profile" width="300" height="300" />
+      </div>
+      <h1 style={style.headerTitle}>Pia Fierro Portfolio</h1>
+      <NavHeader
+        currentPage={props.currentPage}
+        handlePageChange={props.handlePageChange}
+      />
+    </Header>
   );
 }
