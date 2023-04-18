@@ -6,6 +6,7 @@ const style = {
   myCardContainer: {
     display: "flex",
     justifycontent: "center",
+    marginLeft: "350px",
   },
   myCardStyle: {
     width: 350,
@@ -19,17 +20,28 @@ const { Title } = Typography;
 export default function Resume() {
   return (
     <Layout>
-      <h2>Resume:</h2>
-      <div style={{ backgroundColor: "blue" }}>
-        <a href={cv} download>
-          <DownloadOutlined />
-          Download my resume
-        </a>
+      <div style={{ display: "flex", alignItems: "center" }}>
+        <h2>Resume:</h2>
+        <div
+          style={{
+            backgroundColor: "#001529",
+            width: "fit-content",
+            height: "fit-content",
+            borderRadius: "3px",
+            margin: "10px 15px",
+          }}
+        >
+          <a href={cv} download>
+            Download my resume <span> </span>
+            <DownloadOutlined />
+          </a>
+        </div>
       </div>
 
       <div style={style.myCardContainer}>
         <Space direction="horizontal" size={100}>
           <Card
+            bordered={true}
             title={<Title level={3}>Front End Proficiencies</Title>}
             style={style.myCardStyle}
           >
@@ -43,6 +55,7 @@ export default function Resume() {
             <li>Handlebars</li>
           </Card>
           <Card
+            bordered={true}
             title={<Title level={3}>Back End Proficiencies</Title>}
             style={style.myCardStyle}
           >

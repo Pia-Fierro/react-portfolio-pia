@@ -21,7 +21,8 @@ export default function Projects(props) {
           style={{
             width: 500,
             backgroundColor: "#001529",
-            padding: "10px",
+            padding: "5px",
+            borderColor: "white",
           }}
           cover={<img alt={project.alt} src={project.src} />}
         >
