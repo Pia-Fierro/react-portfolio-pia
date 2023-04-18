@@ -47,7 +47,7 @@ export default function ContactForm() {
       >
         <Form.Item
           name={["user", "name"]}
-          label={<spam style={{ fontSize: "30px" }}>Name</spam>}
+          label={<spam style={{ fontSize: "25px" }}>Name</spam>}
           rules={[
             {
               required: true,
@@ -58,7 +58,7 @@ export default function ContactForm() {
         </Form.Item>
         <Form.Item
           name={["user", "email"]}
-          label={<spam style={{ fontSize: "30px" }}>Email</spam>}
+          label={<spam style={{ fontSize: "25px" }}>Email</spam>}
           rules={[
             {
               type: "email",
@@ -72,7 +72,7 @@ export default function ContactForm() {
         </Form.Item>
         <Form.Item
           name={["user", "message"]}
-          label={<spam style={{ fontSize: "30px" }}>Message</spam>}
+          label={<spam style={{ fontSize: "25px" }}>Message</spam>}
           rules={[
             {
               required: true,

@@ -1,4 +1,5 @@
 import React from "react";
+import "../index.css";
 const style = {
   myNavBar: {
     alineItems: "right",
@@ -7,6 +8,7 @@ const style = {
     justifyContent: "end",
     backgroundColor: "#001529",
   },
+
 };
 function NavHeader({ currentPage, handlePageChange }) {
   return (

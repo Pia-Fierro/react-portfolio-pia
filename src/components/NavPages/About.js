@@ -18,8 +18,8 @@ export default function About() {
           <p
             style={{
               display: "flex",
-              fontSize: "20px",
-              padding: "70px 0 70px 0",
+              fontSize: "22px",
+              padding: "80px 0 80px 0",
             }}
           >
             I was born in Chile, but moved to Spain when I was a child. In Spain
