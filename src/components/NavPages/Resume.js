@@ -1,7 +1,7 @@
 import React from "react";
 import { Layout, Card, Space, Typography } from "antd";
 import { DownloadOutlined } from "@ant-design/icons";
-import cv from "../../assets/resume/cv.pdf";
+import resume from "../../assets/resume/resume.pdf";
 const style = {
   myCardContainer: {
     display: "flex",
@@ -31,7 +31,7 @@ export default function Resume() {
             margin: "10px 15px",
           }}
         >
-          <a href={cv} download>
+          <a href={resume} download>
             Download my resume <span> </span>
             <DownloadOutlined />
           </a>
