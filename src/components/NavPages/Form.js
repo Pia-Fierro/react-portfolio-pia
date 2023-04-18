@@ -1,5 +1,6 @@
 import React from "react";
-import { Layout, Button, Form, Input, message } from "antd";
+import { Button, Form, Input, message } from "antd";
+import "../../index.css";
 
 const layout = {
   labelCol: {
@@ -37,6 +38,7 @@ export default function ContactForm() {
     <div>
       <h2>Contact Me:</h2>
       <Form
+        style={{ padding: "100px 0 100px 0" }}
         {...layout}
         form={form}
         name="nest-messages"
@@ -45,7 +47,7 @@ export default function ContactForm() {
       >
         <Form.Item
           name={["user", "name"]}
-          label="Name"
+          label="name"
           rules={[
             {
               required: true,

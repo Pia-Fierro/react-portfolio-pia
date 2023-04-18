@@ -4,6 +4,7 @@ import { DownloadOutlined } from "@ant-design/icons";
 import resume from "../../assets/resume/resume.pdf";
 const style = {
   myCardContainer: {
+    padding: "50px 0 50px 0",
     display: "flex",
     justifyContent: "center",
   },

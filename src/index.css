@@ -40,3 +40,6 @@ body{
       border-color: #001529;
     
     }
+    :where(.css-dev-only-do-not-override-1xusghl).ant-form-item .ant-form-item-label >label {
+      font-size: 20px;
+    }
