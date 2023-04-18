@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-portfolio-pia/static/css/main.069749d6.css",
-    "main.js": "/react-portfolio-pia/static/js/main.0840b48d.js",
+    "main.js": "/react-portfolio-pia/static/js/main.17f8666c.js",
     "static/media/Destination-inspiration.jpg": "/react-portfolio-pia/static/media/Destination-inspiration.b6f966df330c8e6e3d0e.jpg",
     "static/media/Work-Day-Scheduler.jpg": "/react-portfolio-pia/static/media/Work-Day-Scheduler.d8640696d3092dc5bb1e.jpg",
     "static/media/Weather-Dashboard.jpg": "/react-portfolio-pia/static/media/Weather-Dashboard.ef5ecae90b223e110f72.jpg",
@@ -12,10 +12,10 @@
     "static/media/pia-profile-pic.jpg": "/react-portfolio-pia/static/media/pia-profile-pic.1171992f76ea3154b34a.jpg",
     "index.html": "/react-portfolio-pia/index.html",
     "main.069749d6.css.map": "/react-portfolio-pia/static/css/main.069749d6.css.map",
-    "main.0840b48d.js.map": "/react-portfolio-pia/static/js/main.0840b48d.js.map"
+    "main.17f8666c.js.map": "/react-portfolio-pia/static/js/main.17f8666c.js.map"
   },
   "entrypoints": [
     "static/css/main.069749d6.css",
-    "static/js/main.0840b48d.js"
+    "static/js/main.17f8666c.js"
   ]
 }
