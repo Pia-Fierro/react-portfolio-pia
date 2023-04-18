@@ -9,7 +9,7 @@ Navigate thru:
 - About me: to know about my biography, strenghs and goals,
 - Portfolio: where you can find six of my projects deployed and their respectives GitHub repositories,
 - Contact
-- Resume
+- Resume: with my proficiences both in back & front end plus a a link to download my resume in a PDF file.
 
 At the footer find links to my GitHub profile, LinkdIn and twitter
 
@@ -23,6 +23,8 @@ This portfolio was built with:
 - gh-pages
 - HTML and CSS
 
+And deployed using gh-pages.
+
 ## Link to deployed portfolio
 
-> [Pia Fierro Portfolio]()
+> [Pia Fierro Portfolio](https://pia-fierro.github.io/react-portfolio-pia/)
