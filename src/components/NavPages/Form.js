@@ -2,6 +2,7 @@ import React from "react";
 import { Button, Form, Input, message } from "antd";
 import "../../index.css";
 
+
 const layout = {
   labelCol: {
     span: 8,
@@ -47,7 +48,7 @@ export default function ContactForm() {
       >
         <Form.Item
           name={["user", "name"]}
-          label="name"
+          label="Name"
           rules={[
             {
               required: true,

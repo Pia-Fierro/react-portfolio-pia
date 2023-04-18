@@ -10,7 +10,7 @@ export default function About() {
       <h2>About me:</h2>
       <Content
         style={{
-          padding: "40px 40px",
+          padding: "70px 0 70px 0",
         }}
       >
         <div
@@ -48,6 +48,6 @@ export default function About() {
           </p>
         </div>
       </Content>
-      </div>
+    </div>
   );
 }
