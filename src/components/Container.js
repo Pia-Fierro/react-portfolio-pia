@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../App.css";
+import "../index.css";
 import PageHeader from "./Header";
 import PageFooter from "./Footer.js";
 import About from "./NavPages/About.js";

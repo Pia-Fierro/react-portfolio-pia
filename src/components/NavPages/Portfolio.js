@@ -1,6 +1,6 @@
 import React from "react";
 import Projects from "./Projects";
-import { Layout } from "antd";
+
 // importing images to populate the projects card
 import quizImg from "../../assets/images/Coding-Quiz-Challenge.jpg";
 import destinationImg from "../../assets/images/Destination-inspiration.jpg";
