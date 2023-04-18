@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/react-portfolio-pia/static/css/main.cf366eac.css",
+    "main.js": "/react-portfolio-pia/static/js/main.a7797a90.js",
+    "static/media/Destination-inspiration.jpg": "/react-portfolio-pia/static/media/Destination-inspiration.b6f966df330c8e6e3d0e.jpg",
+    "static/media/Work-Day-Scheduler.jpg": "/react-portfolio-pia/static/media/Work-Day-Scheduler.d8640696d3092dc5bb1e.jpg",
+    "static/media/Weather-Dashboard.jpg": "/react-portfolio-pia/static/media/Weather-Dashboard.ef5ecae90b223e110f72.jpg",
+    "static/media/Coding-Quiz-Challenge.jpg": "/react-portfolio-pia/static/media/Coding-Quiz-Challenge.7524773d0c3b608bebc8.jpg",
+    "static/media/Open-Chat-Box.jpg": "/react-portfolio-pia/static/media/Open-Chat-Box.36f5f39375f2cade6e28.jpg",
+    "static/media/Note-Taker.jpg": "/react-portfolio-pia/static/media/Note-Taker.df49e1cbc2af3bab5252.jpg",
+    "static/media/resume.pdf": "/react-portfolio-pia/static/media/resume.29d09c902c8479a0ef4d.pdf",
+    "static/media/pia-profile-pic.jpg": "/react-portfolio-pia/static/media/pia-profile-pic.1171992f76ea3154b34a.jpg",
+    "index.html": "/react-portfolio-pia/index.html",
+    "main.cf366eac.css.map": "/react-portfolio-pia/static/css/main.cf366eac.css.map",
+    "main.a7797a90.js.map": "/react-portfolio-pia/static/js/main.a7797a90.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cf366eac.css",
+    "static/js/main.a7797a90.js"
+  ]
+}
