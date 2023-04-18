@@ -2,7 +2,6 @@ import React from "react";
 import { Button, Form, Input, message } from "antd";
 import "../../index.css";
 
-
 const layout = {
   labelCol: {
     span: 8,
@@ -48,7 +47,7 @@ export default function ContactForm() {
       >
         <Form.Item
           name={["user", "name"]}
-          label="Name"
+          label={<spam style={{ fontSize: "30px" }}>Name</spam>}
           rules={[
             {
               required: true,
@@ -59,7 +58,7 @@ export default function ContactForm() {
         </Form.Item>
         <Form.Item
           name={["user", "email"]}
-          label="Email"
+          label={<spam style={{ fontSize: "30px" }}>Email</spam>}
           rules={[
             {
               type: "email",
@@ -73,7 +72,7 @@ export default function ContactForm() {
         </Form.Item>
         <Form.Item
           name={["user", "message"]}
-          label="Message"
+          label={<spam style={{ fontSize: "30px" }}>Message</spam>}
           rules={[
             {
               required: true,

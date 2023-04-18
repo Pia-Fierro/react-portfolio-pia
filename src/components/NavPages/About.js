@@ -8,18 +8,20 @@ export default function About() {
   return (
     <div>
       <h2>About me:</h2>
-      <Content
-        style={{
-          padding: "70px 0 70px 0",
-        }}
-      >
+      <Content>
         <div
           className="site-layout-content"
           style={{
             background: colorBgContainer,
           }}
         >
-          <p style={{ display: "flex", fontSize: "18px", borderColor: "blue" }}>
+          <p
+            style={{
+              display: "flex",
+              fontSize: "20px",
+              padding: "70px 0 70px 0",
+            }}
+          >
             I was born in Chile, but moved to Spain when I was a child. In Spain
             I obtiened a veterinarian degree, followed by a postdegree in exotic
             animals medicine & surgery. After completing my formation I went
